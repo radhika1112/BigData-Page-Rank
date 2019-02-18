@@ -95,18 +95,7 @@ class Job1_Mapper extends org.apache.hadoop.mapreduce.Mapper<LongWritable, Text,
 					catch (ParseException e) {
 						main="NONO";
 					}
-				/*
-				try {
-						//if the line corresponding to main is not empty, skip the keyword MAIN and save the outlinks
-						main = line.substring(4, line.length() - 1);
-						
-					} 
-					catch (StringIndexOutOfBoundsException e) {
-						
-						//if substring fails, the line is empty
-						main = "";
-					}
-				*/	
+				
 				} 
 				// if the line starts with TEXTDATA, this marks the end of article entry.
 				// write the output for Job1_reducer.
